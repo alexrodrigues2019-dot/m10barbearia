@@ -1,0 +1,245 @@
+:root {
+    --bg: #0b0b0b;
+    --card: #141414;
+    --muted: #dcdcdc;
+    --accent: #c89b3c;
+    --accent-dark: #a37c2f;
+    --container: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.wrap {
+    width: 90%;
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #000c;
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.brand img {
+    height: 60px;
+}
+
+.site-nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.site-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.site-nav a.cta {
+    background: var(--accent);
+    color: #000;
+    font-weight: 700;
+}
+
+.site-nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3)),
+                url('assets/img/logx.png') center/contain no-repeat;
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.titulo-principal {
+    font-family: 'Black Han Sans', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #000, 0 0 20px var(--accent-dark);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ajuste conforme o layout */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero p {
+    margin: 18px 0 24px;
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: var(--accent);
+    color: #0b0b0b;
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .2s;
+}
+
+.btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section h2 {
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.tabela-precos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.tabela-precos th {
+    background: var(--accent);
+    color: #000;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-precos td {
+    background: var(--card);
+    padding: 12px;
+    color: var(--muted);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.equipe .barbeiros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.barbeiro-card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.barbeiro-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.gal-item {
+    background: var(--card);
+    height: 140px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+
+.site-footer {
+    background: #050505;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+/* === GALERIA DE IMAGENS === */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* se adapta ao tamanho da tela */
+  gap: 15px; /* espaçamento entre imagens */
+  justify-items: center; /* centraliza as imagens */
+  align-items: center;
+  padding: 10px;
+}
+
+.gal-item {
+  width: 100%;
+  max-width: 250px; /* tamanho máximo por imagem */
+  overflow: hidden; /* evita que a imagem estoure o contêiner */
+  border-radius: 8px; /* bordas suaves */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* leve sombra */
+  transition: transform 0.3s ease;
+}
+
+.gal-item:hover {
+  transform: scale(1.05); /* efeito ao passar o mouse */
+}
+
+.gal-item img {
+  width: 100%; /* faz a imagem ocupar o contêiner */
+  height: auto; /* mantém a proporção original */
+  object-fit: cover; /* corta bordas se necessário, sem distorcer */
+  display: block;
+}

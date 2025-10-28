@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>M10 Barbearia — Estilo, Classe e Atitude</title>
+  <link rel="icon" href="m10barbearia/imagens/newicon.png">
+  <link href="./m10barbearia/imagens/" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    /* Centraliza o texto dentro das células da tabela */
+    .tabela-precos {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto; /* Centraliza a tabela */
+      text-align: center; /* Centraliza o texto das células */
+    }
+
+    .tabela-precos th,
+    .tabela-precos td {
+      text-align: center; /* Alinha o conteúdo das células no centro */
+      padding: 10px; /* Espaçamento interno nas células */
+    }
+
+    .tabela-precos thead {
+      background-color: #222; /* Cor do cabeçalho */
+      color: #fff; /* Cor do texto no cabeçalho */
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="file:///D:/M10_Barbearia_site/index.html#"><img src="m10barbearia/imagens/logx.png" alt="M10 Barbearia"></a>
+      <nav class="site-nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#precos">Preços</a>
+        <a href="#barbeiros">Equipe</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato" class="cta">Agende</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Apresentação">
+      <div class="overlay"></div>
+      <div class="wrap hero-inner">            
+        <img src="m10barbearia/imagens/baner.png">    
+        <p> </p>
+        <p> </p>
+        <a href="https://wa.me/5518998105659" target="_blank" class="btn">Agendar pelo WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="wrap">
+        <h2>Serviços</h2>
+        <p>Mantemos todos os serviços originais: cortes masculinos, navalha, barba, barba design e tratamentos capilares.</p>
+      </div>
+    </section>
+
+    <section id="precos" class="section">
+      <div class="wrap">
+        <h2>Preços</h2>
+        <table class="tabela-precos" role="table">
+          <thead>
+            <tr>
+              <th>Serviço</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Degradê em Geral</td><td>R$ 40,00</td></tr>
+            <tr><td>Barba</td><td>R$ 30,00</td></tr>
+            <tr><td>Corte Social</td><td>R$ 30,00</td></tr>
+            <tr><td>Corte + Barba</td><td>R$ 60,00</td></tr>
+            <tr><td>Sobrancelha</td><td>R$ 10,00</td></tr>
+            <tr><td>Limpesa de Pele</td><td>R$ 25,00</td></tr>
+            <tr><td>Hidratação</td><td>R$ 25,00</td></tr>
+            <tr><td>Pigentação</td><td>R$ 20,00</td></tr>
+            <tr><td>Platinado + Corte</td><td>R$ 120,00</td></tr>
+            <tr><td>Luzes + Corte</td><td>R$ 100,00</td></tr>
+            <tr><td>Progressiva + Corte</td><td>R$ 120,00</td></tr>
+            <tr><td>Depilação Nasal</td><td>R$ 20,00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="barbeiros" class="section equipe">
+      <div class="wrap">
+        <h2>Equipe</h2>
+        <div class="barbeiros-container">
+          <article class="barbeiro-card">
+            <img src="m10barbearia/imagens/logo.png" alt="Barbeiro Maicon Marcelo">
+            <h3>Barbeiro</h3>
+            <p>Maicon Marcelo</p>
+          </article>
+          <article class="barbeiro-card">
+            <img src="m10barbearia/imagens/logo.png" alt="Barbeiro Breno Rodrigues">
+            <h3>Barbeiro</h3>
+            <p>Breno Rodrigues</p>
+          </article>
+          <article class="barbeiro-card">
+            <img src="m10barbearia/imagens/logo.png" alt="Barbeiro Kauã Candido">
+            <h3>Barbeiro</h3>
+            <p>Kauã Candido</p>
+          </article>
+          <article class="barbeiro-card">
+            <img src="m10barbearia/imagens/logo.png" alt="Barbeiro Paulo Gabriel">
+            <h3>Barbeiro</h3>
+            <p>Paulo Gabriel</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section galeria">
+      <div class="wrap">
+        <h2>Galeria</h2>
+        <p>Veja alguns dos nossos trabalhos recentes.</p>
+        <div class="galeria-grid">
+          <div class="gal-item">
+            <img src="m10barbearia/imagens/logx.png" alt="Corte moderno">
+          </div>
+          <div class="gal-item">
+            <img src="m10barbearia/imagens/logx.png" alt="Barba desenhada">
+          </div>
+          <div class="gal-item">
+            <img src="m10barbearia/imagens/logx.png" alt="Corte degradê">
+          </div>
+          <div class="gal-item">
+            <img src="m10barbearia/imagens/logx.png" alt="Corte clássico">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="contato">
+        <p><strong>Endereço:</strong> Rua dos Cortes, 123 - Centro</p>
+        <p><strong>WhatsApp:</strong> (18) 98120-0210</p>
+        <p><strong>Instagram:</strong> @barbeariaclassica</p>
+      </div>
+      <div class="copyright">© 2025 M10 Barbearia — Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="./Imagens/main.js"></script>
+</body>
+</html>
